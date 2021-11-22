@@ -1,9 +1,9 @@
-#Hello
+# Hello
 
 I'm Mark a graduating data scientist. Take a look at my projects while I figure out the rest...
 _If you're in a hurry this should tell everything [numpy, pandas, pytorch, matplotlib, networkx].. sometimes some embedded development in C-variant_
 
-##Stuff I've written
+## Stuff I've partly written
 
 [My bachelor thesis project about conditional probabilities](https://github.com/vioSpark/weather-data-analyzer-public)
 
@@ -16,7 +16,7 @@ _If you're in a hurry this should tell everything [numpy, pandas, pytorch, matpl
 
 [When I nerded out, and made a mathematical model following a random idea](https://github.com/vioSpark/lens-system-optimizer) (to be fair I've solved a lot of my bachelor homeworks with notebooks like this)
 
-##Stuff other's written
+## Stuff when coding wasn't the main focus
 
 [When we analyzed some dangerously-high-level math concepts to understand how to improve existing CNNs](https://towardsdatascience.com/sesn-cec766026179)
 
