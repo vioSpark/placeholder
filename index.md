@@ -1,7 +1,8 @@
-# Hello
+# [placeholder]
 
-I'm Mark a graduating data scientist. Take a look at my projects while I figure out the rest...
-_If you're in a hurry this should tell everything [numpy, pandas, pytorch, matplotlib, networkx].. sometimes some embedded development in C-variant_
+Hi, 
+I'm Mark a graduating data scientist. Take a look at my projects while I figure out the rest...  
+_If you're in a hurry this should tell everything [numpy, pandas, pytorch, matplotlib, networkx]_
 
 ## Stuff I've partly written
 
@@ -21,3 +22,6 @@ _If you're in a hurry this should tell everything [numpy, pandas, pytorch, matpl
 [When we analyzed some dangerously-high-level math concepts to understand how to improve existing CNNs](https://towardsdatascience.com/sesn-cec766026179)
 
 [Or this time when we translated a vision into a technological roadmap](https://lukacs-mark.medium.com/here-comes-the-police-36e050a1224e)
+
+## This should totally became a sidebar in the future
+If this all got you interested, and have a fun next project proposal, [share it with me](https://www.linkedin.com/feed/)
