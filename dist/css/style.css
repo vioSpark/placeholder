@@ -25,19 +25,6 @@
     transform: translateZ(-1px) scale(2);
   }
 
-
-  /* demo styles
-  --------------------------------------------- */
-
-  .parallax {
-    font-size: 200%;
-  }
-
-   /* add some padding to force scrollbars */
-  .parallax__layer {
-    padding: 100vh 0;
-  }
-
 /*------------------------------------------------------------------------------------------------------------------*/
 /*Basic flip-card from w3*/
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -196,7 +183,7 @@ sup {
 }
 
 img {
-    border-style: none
+    border-style: none;
 }
 
 svg:not(:root) {
@@ -1436,14 +1423,24 @@ label {
     right: 0
 }
 
-.hero::before,
+.hero .hero-reverse-particles-container {
+    position: absolute;
+    top: 58%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: black; */
+    opacity: 0.5;
+}
+
+/* .hero::before,
 .hero::after {
     content: '';
     position: absolute;
     left: calc(50% - 360px);
     width: 720px;
     background-repeat: no-repeat
-}
+} 
 
 .hero::before {
     top: 0;
@@ -1455,7 +1452,7 @@ label {
     bottom: 42%;
     height: 173px;
     background-size: 720px 173px
-}
+} */
 
 .hero-inner {
     position: relative;
@@ -1472,7 +1469,7 @@ label {
         padding-top: 160px;
         padding-bottom: 128px
     }
-    .hero::before,
+    /* .hero::before,
     .hero::after {
         left: calc(50% - 720px);
         width: 1440px
@@ -1484,7 +1481,7 @@ label {
     .hero::after {
         height: 347px;
         background-size: 1440px 347px
-    }
+    } */
     .hero-copy {
         margin-bottom: 88px
     }
