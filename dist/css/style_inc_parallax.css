@@ -2,7 +2,7 @@
 /*parallax from https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3-webkit-overflow-fix/ */
 /*------------------------------------------------------------------------------------------------------------------*/
 
-  .parallax {
+.parallax {
     height: 500px; /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
@@ -1980,7 +1980,7 @@ main {
     left: calc(50% - 360px);
     width: 720px;
     height: 291px;
-    background-image: url("../images/footer-bg.svg");
+    background-image: url("../images/TU_Delft_lib.jpg");
     background-size: 720px 291px;
     background-repeat: no-repeat
 }

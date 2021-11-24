@@ -12,15 +12,32 @@
 </head>
 
 <body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
+<!-- 
+    <div class="parallax">
+        <div class="parallax__layer parallax__layer--back">
+          <div class="title">This is the background</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <div class="title">This is the foreground</div>
+        </div>
+    </div> 
+-->
 
+
+
+
+
+
+    <div class="body-wrap boxed-container">
         <main>
-            <section class="hero text-center text-light">
-                <div class="hero-bg"></div>
-                <div class="hero-particles-container">
-                    <canvas id="hero-particles"></canvas>
+            <section class="hero text-center text-light parallax">
+                <div class="parallax__layer parallax__layer--back">
+                    <div class="hero-bg"></div>
+                    <div class="hero-particles-container">
+                        <canvas id="hero-particles"></canvas>
+                    </div>
                 </div>
-                <div class="container-sm">
+                <div class="container-sm parallax__layer parallax__layer--base">
                     <div class="hero-inner">
                         <div class="hero-copy">
                             <h1 class="hero-title mt-0">Welcome</h1>
@@ -196,6 +213,7 @@
                                 share it with me
                                 </a>
                         </div>
+
                         <div>
                         Test area:
                         TODO:make this shadow-bg-hovering -> parallax

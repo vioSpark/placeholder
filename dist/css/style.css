@@ -1,3 +1,43 @@
+
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
+
+
+  /* demo styles
+  --------------------------------------------- */
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
 /*------------------------------------------------------------------------------------------------------------------*/
 /*Basic flip-card from w3*/
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -153,16 +193,6 @@ sub {
 
 sup {
     top: -0.5em
-}
-
-audio,
-video {
-    display: inline-block
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0
 }
 
 img {
@@ -1824,7 +1854,6 @@ main {
     left: calc(50% - 360px);
     width: 720px;
     height: 291px;
-    background-image: url("../images/footer-bg.svg");
     background-size: 720px 291px;
     background-repeat: no-repeat
 }
