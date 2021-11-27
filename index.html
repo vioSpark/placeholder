@@ -17,46 +17,41 @@
 <body>
     <!-- TODO: fix particles and parallax an navbar-->
     <!-- The navbar + pt-5 solution wanna make me cry -->
-    <div class="text-light parallax pt-5">
+    <div class="text-light parallax">
         <div class="parallax__group">
             <div class="parallax__layer parallax__layer--back">
-                <div class="hero-particles-container">
+                <div>
+                    <!-- <div class="hero-particles-container"> -->
                     <canvas id="hero-particles"></canvas>
                 </div>
-                <div class="hero-reverse-particles-container">
-                    <img src="src/images/TU_Delft_lib.jpg" alt="TU Delft Library" , background-color="black" ;>
-                </div>
+                <img src="src/images/TU_Delft_lib.jpg" alt="TU Delft Library" , background-color="black" ;>
             </div>
 
 
-            <div class="parallax__layer parallax__layer--base bg-dark text-light text-sm-start hero">
+            <div class="parallax__layer parallax__layer--base bg-dark">
                 <!-- Landing text -->
-                <div class="hero-bg container d-sm-flex align-items-center justify-content-between">
-                    <div>
-                        <h1>Welcome on the website of <span class="text-warning">Mark</span>...</h1>
-                        <p class="lead my-4">
-                            I'm a graduating data scientist*. Take a look at my projects while I figure out the rest of
-                            the
-                            website...
-                        </p>
-                        <p class="lead my-4">
-                            If you're in a hurry the list <span class="text-warning">numpy, pandas, pytorch, matplotlib,
-                                networkx</span> should tell everything!
-                        </p>
-                        <div class="text-center">
-                            <a class="button button-primary button-wide-mobile"
-                                href="https://www.linkedin.com/in/vispark/"><svg xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-                                    width="1.03em" height="1em"
-                                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
-                                    <path
-                                        d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
-                                        fill="#161614"></path>
-                                </svg>
-                                LinkedIn
-                            </a>
-                        </div>
+                <div class="container py-5">
+                    <h1>Welcome on the website of <span class="text-warning">Mark</span>...</h1>
+                    <p class="lead my-4">
+                        I'm a graduating data scientist*. Take a look at my projects while I figure out the rest of
+                        the website...
+                    </p>
+                    <p class="lead my-4">
+                        If you're in a hurry the list <span class="text-warning">numpy, pandas, pytorch, matplotlib,
+                            networkx</span> should tell everything!
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-primary" href="https://www.linkedin.com/in/vispark/"><svg
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="1.03em" height="1em"
+                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
+                                <path
+                                    d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                                    fill="#161614"></path>
+                            </svg>
+                            LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>
@@ -66,117 +61,9 @@
         <!-- 
         TODO: fix hero-bg (compare w old and see if fix is needed)
         apply color scheme (recompile sass?)
-     -->
+        -->
 
-
-
-        <!-- project cards -->
-        <!-- TODO: define a template for them
-        fix 2-1 wierdness around m -->
-        <div class="parallax__group">
-            <section class="parallax__layer parallax__layer--base container">
-                Project where I mostly coded
-                <div class="row">
-                    <div class="col-md">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p>My bachelor thesis project about conditional probabilities</p>
-                                    <p><a class="button button-primary button-wide-mobile"
-                                            href="https://github.com/vioSpark/weather-data-analyzer-public">
-                                            code</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img class="flip-image" src="src/images/color_sample_measurement.jpg"
-                                        alt="Yellow color sample">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p>A research project where we calculated the difference of the
-                                        color between the samples based on spectral performance</p>
-                                    <p><a class="button button-primary button-wide-mobile"
-                                            href="https://github.com/vioSpark/color_sample_measurements">
-                                            code</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p>A few cool stuff I've done under my bachelors</p>
-                                    <p><a class="button button-primary button-wide-mobile"
-                                            href="https://github.com/vioSpark/BME-cool-part">
-                                            code</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p>A huge C++ project we still haven't cleaned up after the
-                                        competition</p>
-                                    <p><a class="button button-primary button-wide-mobile"
-                                            href="https://github.com/Defragged-Zebra/Ericsson2020">
-                                            code</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p>And the next project with the same team, this time in python</p>
-                                    <p><a class="button button-primary button-wide-mobile"
-                                            href="https://github.com/Defragged-Zebra/Bosch2020">
-                                            code</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p>The time when I nerded out, and made a mathematical model
-                                        following a random idea. To be fair I've solved a lot of my
-                                        bachelor homeworks with notebooks like this.</p>
-                                    <p><a class="button button-primary button-wide-mobile"
-                                            href="https://github.com/vioSpark/lens-system-optimizer">
-                                            code</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+        
         <div class="parallax__group">
             <section class="parallax__layer parallax__layer--base container">
                 Projects where I read code more than writing

@@ -10,7 +10,7 @@
 /*------------------------------------------------------------------------------------------------------------------*/
 /* Parallax from https://keithclark.co.uk/articles/pure-css-parallax-websites/demo2/   */
 /*------------------------------------------------------------------------------------------------------------------*/
-.parallax__group {
+  .parallax__group {
     position: relative;
     height: 500px; /* fallback for older browsers */
     height: 100vh;
