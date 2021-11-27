@@ -1,52 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <title>Mark Lukacs</title>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-    <!-- Bootstrap -->
+    <!-- Bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <!-- internal css -->
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 </head>
 
-<body class="is-boxed has-animations">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">Placeholder</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#personal" class="nav-link">Personal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Who tf is Mark/contact </a>
-                        <!-- write intro here + sm links-->
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- particles and parallax -->
-
-    <section class="bg-dark text-light text-sm-start hero">
-        <div class="parallax">
+<body>
+    <!-- TODO: fix particles and parallax an navbar-->
+    <!-- The navbar + pt-5 solution wanna make me cry -->
+    <div class="text-light parallax pt-5">
+        <div class="parallax__group">
             <div class="parallax__layer parallax__layer--back">
                 <div class="hero-particles-container">
                     <canvas id="hero-particles"></canvas>
@@ -56,238 +28,209 @@
                 </div>
             </div>
 
-            <!-- Landing text -->
-            <div
-                class="hero-bg container d-sm-flex align-items-center justify-content-between parallax__layer parallax__layer--base">
-                <div>
-                    <h1>Welcome on the website of <span class="text-warning">Mark</span>...</h1>
-                    <p class="lead my-4">
-                        I'm a graduating data scientist*. Take a look at my projects while I figure out the rest of the
-                        website...
-                    </p>
-                    <p class="lead my-4">
-                        If you're in a hurry the list <span class="text-warning">numpy, pandas, pytorch, matplotlib,
-                            networkx</span> should tell everything!
-                    </p>
-                    <div class="text-center">
-                        <a class="button button-primary button-wide-mobile"
-                            href="https://www.linkedin.com/in/vispark/"><svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-                                width="1.03em" height="1em"
-                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
-                                <path
-                                    d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
-                                    fill="#161614"></path>
-                            </svg>
-                            LinkedIn
-                        </a>
+
+            <div class="parallax__layer parallax__layer--base bg-dark text-light text-sm-start hero">
+                <!-- Landing text -->
+                <div class="hero-bg container d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>Welcome on the website of <span class="text-warning">Mark</span>...</h1>
+                        <p class="lead my-4">
+                            I'm a graduating data scientist*. Take a look at my projects while I figure out the rest of
+                            the
+                            website...
+                        </p>
+                        <p class="lead my-4">
+                            If you're in a hurry the list <span class="text-warning">numpy, pandas, pytorch, matplotlib,
+                                networkx</span> should tell everything!
+                        </p>
+                        <div class="text-center">
+                            <a class="button button-primary button-wide-mobile"
+                                href="https://www.linkedin.com/in/vispark/"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                    width="1.03em" height="1em"
+                                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
+                                    <path
+                                        d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                                        fill="#161614"></path>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- 
+
+        <!-- 
         TODO: fix hero-bg (compare w old and see if fix is needed)
         apply color scheme (recompile sass?)
      -->
 
-    <!-- buttons to sm
-                            <div class="hero-cta">
-                                <a class="button button-primary button-wide-mobile"
-                                    href="https://www.linkedin.com/in/vispark/"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-                                        width="1.03em" height="1em"
-                                        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
-                                        <path
-                                            d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
-                                            fill="#161614"></path>
-                                    </svg>
-                                    &nbsp;LinkedIn
-                                </a>
-                            </div>
-                            <div class="hero-cta">
-                                <a class="button button-primary button-wide-mobile"
-                                    href="https://lukacs-mark.medium.com/">
-                                    Medium
-                                </a>
-                            </div>
-                            <h1 class="hero-title mt-0"></h1>
-                            <div class="hero-cta">
-                                <a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/vioSpark"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-                                        width="1.03em" height="1em"
-                                        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 250">
-                                        <path
-                                            d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46c6.397 1.185 8.746-2.777 8.746-6.158c0-3.052-.12-13.135-.174-23.83c-35.61 7.742-43.124-15.103-43.124-15.103c-5.823-14.795-14.213-18.73-14.213-18.73c-11.613-7.944.876-7.78.876-7.78c12.853.902 19.621 13.19 19.621 13.19c11.417 19.568 29.945 13.911 37.249 10.64c1.149-8.272 4.466-13.92 8.127-17.116c-28.431-3.236-58.318-14.212-58.318-63.258c0-13.975 5-25.394 13.188-34.358c-1.329-3.224-5.71-16.242 1.24-33.874c0 0 10.749-3.44 35.21 13.121c10.21-2.836 21.16-4.258 32.038-4.307c10.878.049 21.837 1.47 32.066 4.307c24.431-16.56 35.165-13.12 35.165-13.12c6.967 17.63 2.584 30.65 1.255 33.873c8.207 8.964 13.173 20.383 13.173 34.358c0 49.163-29.944 59.988-58.447 63.157c4.591 3.972 8.682 11.762 8.682 23.704c0 17.126-.148 30.91-.148 35.126c0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002C256 57.307 198.691 0 128.001 0zm-80.06 182.34c-.282.636-1.283.827-2.194.39c-.929-.417-1.45-1.284-1.15-1.922c.276-.655 1.279-.838 2.205-.399c.93.418 1.46 1.293 1.139 1.931zm6.296 5.618c-.61.566-1.804.303-2.614-.591c-.837-.892-.994-2.086-.375-2.66c.63-.566 1.787-.301 2.626.591c.838.903 1 2.088.363 2.66zm4.32 7.188c-.785.545-2.067.034-2.86-1.104c-.784-1.138-.784-2.503.017-3.05c.795-.547 2.058-.055 2.861 1.075c.782 1.157.782 2.522-.019 3.08zm7.304 8.325c-.701.774-2.196.566-3.29-.49c-1.119-1.032-1.43-2.496-.726-3.27c.71-.776 2.213-.558 3.315.49c1.11 1.03 1.45 2.505.701 3.27zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033c-1.448-.439-2.395-1.613-2.103-2.626c.301-1.01 1.747-1.484 3.207-1.028c1.446.436 2.396 1.602 2.095 2.622zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95c-1.53.034-2.769-.82-2.786-1.86c0-1.065 1.202-1.932 2.733-1.958c1.522-.03 2.768.818 2.768 1.868zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37c-1.485.271-2.861-.365-3.05-1.386c-.184-1.056.893-2.114 2.376-2.387c1.514-.263 2.868.356 3.061 1.403z"
-                                            fill="#161614" />
-                                    </svg>
-                                    GitHub
-                                </a>
-                            </div>
-     -->
 
-    <!-- project cards -->
-    <!-- TODO: define a template for them
-    fix 2-1 wierdness around m -->
-    Project where I mostly coded
-    <div class="container">
-        <div class="row">
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/TU_Delft_lib.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>My bachelor thesis project about conditional probabilities</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/vioSpark/weather-data-analyzer-public">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/color_sample_measurement.jpg" alt="Yellow color sample">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>A research project where we calculated the difference of the
-                                color between the samples based on spectral performance</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/vioSpark/color_sample_measurements">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/TU_Delft_lib.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>A few cool stuff I've done under my bachelors</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/vioSpark/BME-cool-part">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/TU_Delft_lib.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>A huge C++ project we still haven't cleaned up after the
-                                competition</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/Defragged-Zebra/Ericsson2020">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/TU_Delft_lib.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>And the next project with the same team, this time in python</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/Defragged-Zebra/Bosch2020">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/TU_Delft_lib.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>The time when I nerded out, and made a mathematical model
-                                following a random idea. To be fair I've solved a lot of my
-                                bachelor homeworks with notebooks like this.</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/vioSpark/lens-system-optimizer">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        Projects where I read code more than writing
-        <div class="row">
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/sesn.png" alt="Convolution kernels">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>When we analyzed some dangerously-high-level math concepts to
-                                understand how to improve existing CNNs</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://towardsdatascience.com/sesn-cec766026179">
-                                    blogpost</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/JIP.jpeg" alt="JIP team" class="flip-image">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Or this time when we translated a vision into a technological
-                                roadmap</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://lukacs-mark.medium.com/here-comes-the-police-36e050a1224e">
-                                    blogpost</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="src/images/TU_Delft_lib.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>A few cool stuff I've done under my bachelors</p>
-                            <p><a class="button button-primary button-wide-mobile"
-                                    href="https://github.com/vioSpark/BME-cool-part">
-                                    code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!--
+        <!-- project cards -->
+        <!-- TODO: define a template for them
+        fix 2-1 wierdness around m -->
+        <div class="parallax__group">
+            <section class="parallax__layer parallax__layer--base container">
+                Project where I mostly coded
+                <div class="row">
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>My bachelor thesis project about conditional probabilities</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/vioSpark/weather-data-analyzer-public">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/color_sample_measurement.jpg"
+                                        alt="Yellow color sample">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>A research project where we calculated the difference of the
+                                        color between the samples based on spectral performance</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/vioSpark/color_sample_measurements">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>A few cool stuff I've done under my bachelors</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/vioSpark/BME-cool-part">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>A huge C++ project we still haven't cleaned up after the
+                                        competition</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/Defragged-Zebra/Ericsson2020">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>And the next project with the same team, this time in python</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/Defragged-Zebra/Bosch2020">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>The time when I nerded out, and made a mathematical model
+                                        following a random idea. To be fair I've solved a lot of my
+                                        bachelor homeworks with notebooks like this.</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/vioSpark/lens-system-optimizer">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="parallax__group">
+            <section class="parallax__layer parallax__layer--base container">
+                Projects where I read code more than writing
+                <div class="row">
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/sesn.png" alt="Convolution kernels">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>When we analyzed some dangerously-high-level math concepts to
+                                        understand how to improve existing CNNs</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://towardsdatascience.com/sesn-cec766026179">
+                                            blogpost</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="src/images/JIP.jpeg" alt="JIP team" class="flip-image">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Or this time when we translated a vision into a technological
+                                        roadmap</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://lukacs-mark.medium.com/here-comes-the-police-36e050a1224e">
+                                            blogpost</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="flip-image" src="src/images/TU_Delft_lib.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>A few cool stuff I've done under my bachelors</p>
+                                    <p><a class="button button-primary button-wide-mobile"
+                                            href="https://github.com/vioSpark/BME-cool-part">
+                                            code</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
         <div class="row">
             <div class="col-md">
                 Column
@@ -300,16 +243,20 @@
             </div>
         </div>
         -->
+            </section>
+        </div>
+        <div class="parallax__group">
+            <section class="container bg-dark">
+                If this all got you interested, and have a fun next project proposal,
+                <a class="button button-primary button-wide-mobile" href="https://www.linkedin.com/feed/">
+                    share it with me
+                </a>
+            </section>
+        </div>
     </div>
 
-    If this all got you interested, and have a fun next project proposal,</br>
-    <a class="button button-primary button-wide-mobile" href="https://www.linkedin.com/feed/">
-        share it with me
-    </a>
-
     <!-- TODO: fix footer -->
-    <div class="body-wrap boxed-container">
-
+    <!-- <div class="body-wrap boxed-container">
         <footer class="site-footer">
             <div class="footer-particles-container">
                 <canvas id="footer-particles"></canvas>
@@ -321,13 +268,17 @@
                 </div>
             </div>
         </footer>
-    </div>
+    </div> -->
+
+
 
     <script src="src/js/main.min.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- scrollreveal animation -->
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 </body>
 
 </html>
