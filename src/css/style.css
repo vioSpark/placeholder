@@ -2,9 +2,9 @@
 /*by Spark*/
 /*------------------------------------------------------------------------------------------------------------------*/
 .flip-image{ 
-    width:300px;
-    height:300px;
-    object-fit: cover
+  width:300px;
+  height:300px;
+  object-fit: cover
 }
 
 /* bc of navbar fixed-top */
@@ -104,6 +104,15 @@ body::before {
 
 
 /*------------------------------------------------------------------------------------------------------------------*/
-/*original css*/
-/* dumped to the fuck to produce MWE */
+/*salvage rewritten css*/
 /*------------------------------------------------------------------------------------------------------------------*/
+.hero-particles-container{
+  position: absolute;
+  width: 100%;
+  /* makes my eye hurt, pls recommend a better one */
+  height: 230px;
+}
+
+#hero-particles{
+  height: 100%;
+}
