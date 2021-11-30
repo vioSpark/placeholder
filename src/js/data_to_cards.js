@@ -2,7 +2,7 @@
 const writing_projects = [
     {
         name: "",
-        image: "",
+        image: "infarct_vs_Peczely_number.png",
         description: "My bachelor thesis project about heart attack, weather, and conditional probabilities",
         github: "https://github.com/vioSpark/weather-data-analyzer-public"
     },
@@ -14,7 +14,7 @@ const writing_projects = [
     },
     {
         name: "virus.exe",
-        image: "",
+        image: "virus.jpg",
         description: "A discrete covid simulation using hypotethical parameters and a semi agent-based approach for a competition.",
         note: "It's a huge C++ project we still haven't cleaned up after submitting to Ericcson programozói bajnokság 2020",
         github: "https://github.com/Defragged-Zebra/Ericsson2020",
@@ -22,7 +22,7 @@ const writing_projects = [
     },
     {
         name: "selfdriving_pathfinding",
-        image: "",
+        image: "pathfinding.png",
         description: "A discrete pathfinding solution in a hypothetical word of fixed road-lengths, predictable traffic lights, and unpredictable traffic.",
         note: "It's a python project, submitted to a Bosch programming challange",
         github: "https://github.com/Defragged-Zebra/Bosch2020",
@@ -30,14 +30,14 @@ const writing_projects = [
     },
     {
         name: "Optic lens simulation",
-        image: "",
+        image: "filter_madness2.png",
         description: "The case when I nerded out, and made a mathematical model following a random youtube video.",
         note: "While this was a one-nighter project, I've solved many of my bachelor homeworks with notebooks like this.",
         github: "https://github.com/vioSpark/lens-system-optimizer"
     },
     {
         name: "This website",
-        image: "",
+        image: "website.png",
         description: "I decided to make a website so I did",
         github: "https://github.com/vioSpark/placeholder/settings/pages"
     }
@@ -46,20 +46,20 @@ const writing_projects = [
 const reading_projects = [
     {
         name: "Cool practicals",
-        image: "",
+        image: "opnenCV.png",
         description: "A few cool concepts we coded in practicals under my bachelors",
         github: "https://github.com/vioSpark/BME-cool-part"
     },
     {
         name: "Scale-equvariat CNNs",
-        image: "",
+        image: "sesn.png",
         description: "An assignment when we reviwed some high-level set theory to understand some of the latest improvements in image recognition",
         website: "https://spetrescu.github.io/sesn-reproducibility-project"
         // github:"https://towardsdatascience.com/sesn-cec766026179"
     },
     {
         name: "Knowldge-management",
-        image: "",
+        image: "JIP_square.jpeg",
         description: "This time we translated an idea into a technological roadmap",
         note: "Briefly speaking it was about automatically extracting bits of knowledge from scientific articles",
         blog: "https://lukacs-mark.medium.com/here-comes-the-police-36e050a1224e"

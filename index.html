@@ -15,118 +15,107 @@
 </head>
 
 <body>
-    <!-- Navbar WIP-->
-    <nav class="navbar bg-dark navbar-dark fixed-top navbar-expand-lg py-2">
-        <div class="container">
-            <a href="#" class="navbar-brand">Placeholder</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#personal" class="nav-link">Personal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Who tf is Mark/contact </a>
-                        write intro here + sm links
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
     <div class="parallax">
-        <div class="parallax__group">
-            <div class="parallax_container">
-                <div class="parallax__layer parallax__layer--back">
-                    <div class="hero-particles-container bg-dark">
-                        <canvas id="hero-particles"></canvas>
-                    </div>
-                    <img src="src/images/TU_Delft_lib.jpg" alt="TU Delft Library" , background-color="black" ;>
+        <div class="parallax_container">
+            <div class="parallax__layer parallax__layer--back">
+                <img class="bg-img" src="src/images/TU_Delft_lib.jpg" , background-color="black" ;>
+                <div class="hero-particles-container bg-dark">
+                    <canvas id="hero-particles"></canvas>
                 </div>
+            </div>
 
 
-                <div class="parallax__layer parallax__layer--base">
+            <div class="parallax__layer parallax__layer--base">
+                <!-- Navbar WIP-->
+                <nav class="navbar bg-dark navbar-dark fixed-top navbar-expand-lg py-2">
+                    <div class="container">
+                        <a href="#" class="navbar-brand">Placeholder</a>
 
-                    <!-- Landing text -->
-                    <div class="lead-text text-light text-center py-5">
-                        <h1>Welcome on the website of <span class="text-warning">Mark</span>...</h1>
-                        <p class="">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navmenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navmenu">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#personal" class="nav-link">Personal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#projects" class="nav-link">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link">Who tf is Mark/contact </a>
+                                    write intro here + sm links
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+                <!-- Landing text -->
+                <section class="landing">
+                    <div class="lead-text text-light text-center py-5 justify-content-between">
+                        <h1 class="display-5">Welcome on the website of <span class="text-warning">Mark</span>...</h1>
+                        <p class="lead">
                             I'm a graduating data scientist*. Take a look at my projects while I figure out the rest of
                             the website...
                         </p>
-                        <p class="">
+                        <p class="lead">
                             If you're in a hurry the list <span class="text-warning">numpy, pandas, pytorch, matplotlib,
                                 networkx</span> should tell everything!
                         </p>
-                        <div class="">
-                            <a class="" href="https://www.linkedin.com/in/vispark/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true" focusable="false" width="1.03em" height="1em"
-                                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
-                                    <path
-                                        d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
-                                        fill="#161614"></path>
-                                </svg>
-                                LinkedIn
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project cards -->
-                    <!-- TODO: define a template for them-->
-                    <div class="text-light text-center">
-                        Projects where I mostly coded
-                        <div id="writing_projects" class="d-flex bd-highlight mb-3 flex-wrap">
-                            <!-- js fills the rest here -->
-                        </div>
-
-
-
-                        <!-- more project cards -->
-
-                        <!--         TODO: fix hero-bg (compare w old and see if fix is needed)
-                            apply color scheme (recompile sass?)        -->
-
-                        Projects where I read code more than writing
-                        <div id="reading_projects" class="d-flex bd-highlight mb-3 flex-wrap">
-                            <!-- js fills the rest here -->
-                        </div>
-                    </div>
-
-
-                    <!-- contact me -->
-                    <section class="container bg-dark text-light">
-                        If this all got you interested, and have a fun next project proposal,
-                        <a class="button button-primary button-wide-mobile" href="https://www.linkedin.com/feed/">
-                            share it with me
+                        <p>
+                            *technically I'm doing management of technology see the <a href="#about">about section</a>
+                        </p>
+                        <a class="btn btn-primary" href="https://www.linkedin.com/in/vispark/"><svg
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="1.03em" height="1em"
+                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
+                                <path
+                                    d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                                    fill="#161614"></path>
+                            </svg>
+                            LinkedIn
                         </a>
-                    </section>
-
-                    <!-- TODO: fix footer -->
-                    <div class="body-wrap boxed-container">
-                        <footer class="site-footer">
-                            This is the footer here
-                            <div class="footer-particles-container bg-dark">
-                                <canvas id="footer-particles"></canvas>
-                            </div>
-                            <div class="site-footer-bottom">
-                                <div class="container">
-                                    <div class="site-footer-inner">
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
                     </div>
-                </div>
+                </section>
+
+                <!-- project cards -->
+                <section class="text-light text-center">
+                    <h1 class="display-5 text-dark">
+                        Projects where the focus was on writing code</h1>
+                    <div id="writing_projects" class="d-flex bd-highlight mb-3 flex-wrap">
+                        <!-- js fills the rest here -->
+                    </div>
+                    
+                <!-- more project cards -->
+                    <!--  TODO:  apply color scheme (recompile sass?)        -->
+                    <h1 class="display-5 text-dark">
+                        Projects where the focus was on understadning code
+                    </h1>
+                    <div id="reading_projects" class="d-flex bd-highlight mb-3 flex-wrap">
+                        <!-- js fills the rest here -->
+                    </div>
+                </section>
+
+
+                <!-- contact me -->
+                <section class="container bg-dark text-light">
+                    If this all got you interested, and have a fun next project proposal,
+                    <a class="button button-primary button-wide-mobile" href="https://www.linkedin.com/feed/">
+                        share it with me
+                    </a>
+                </section>
+
+                <!-- TODO: fill footer -->
+                <footer class="site-footer">
+                    Footer sample text
+                    <div class="footer-particles-container bg-dark">
+                        <canvas id="footer-particles"></canvas>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
