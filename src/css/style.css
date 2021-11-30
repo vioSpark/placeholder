@@ -109,9 +109,47 @@ body::before {
 .hero-particles-container{
   position: absolute;
   width: 100%;
-  /* makes my eye hurt, pls recommend a better one */
+  /* makes my eye hurt, pls recommend a better solution */
   height: 230px;
 }
+
+
+.hero-particles-container,
+.lead-text{
+  -webkit-animation: heroBg 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: heroBg 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: scaleY(0) scaleX(1.2) skewY(30deg);
+  transform: scaleY(0) scaleX(1.2) skewY(30deg);
+}
+
+
+@-webkit-keyframes heroBg {
+  from {
+      -webkit-transform: scaleY(0) scaleX(1.2) skewY(30deg);
+      transform: scaleY(0) scaleX(1.2) skewY(30deg);
+      opacity: 1
+  }
+  to {
+      -webkit-transform: scaleY(1) scaleX(1) skewY(0);
+      transform: scaleY(1) scaleX(1) skewY(0);
+      opacity: 1
+  }
+}
+
+@keyframes heroBg {
+  from {
+      -webkit-transform: scaleY(0) scaleX(1.2) skewY(30deg);
+      transform: scaleY(0) scaleX(1.2) skewY(30deg);
+      opacity: 1
+  }
+  to {
+      -webkit-transform: scaleY(1) scaleX(1) skewY(0);
+      transform: scaleY(1) scaleX(1) skewY(0);
+      opacity: 1
+  }
+}
+
 
 #hero-particles{
   height: 100%;
