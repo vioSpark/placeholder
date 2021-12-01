@@ -5,7 +5,7 @@
   --card_width: 300px;
   --card_height: 300px;
   /* makes my eye hurt, pls recommend a better solution */
-  --bg_offset: 286px;
+  --bg_offset: 480px;
   --navbar_offset:56px;
 }
 
@@ -121,14 +121,14 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #0B0D19;
   color: white;
   transform: rotateY(180deg);
 }
 
 
 /*------------------------------------------------------------------------------------------------------------------*/
-/*salvage rewritten css*/
+/*salvaged + rewritten css*/
 /*------------------------------------------------------------------------------------------------------------------*/
 .hero-particles-container{
   position: absolute;
@@ -136,7 +136,18 @@
   height: var(--bg_offset);
 }
 
-.hero-particles-container,
+.landing-bg{
+  position: absolute;
+  width: 100%;
+  height: var(--bg_offset);
+}
+
+#hero-particles{
+  height: 100%;
+}
+
+/* OnLoad() animation */
+.landing-bg,
 .lead-text{
   -webkit-animation: heroBg 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
   animation: heroBg 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
@@ -146,6 +157,47 @@
 }
 
 
+/* original css classes */
+/* TODO: remove */
+.landing-bg{
+  -webkit-animation: heroBg 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: heroBg 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  opacity: 0;
+}
+
+.landing::before,
+.landing::after {
+  -webkit-animation: heroFadeIn .6s ease forwards .45s;
+  animation: heroFadeIn .6s ease forwards .45s;
+  opacity: 0;
+}
+
+.hero-particles-container
+{
+  -webkit-animation: heroFadeIn .6s ease forwards .45s;
+  animation: heroFadeIn .6s ease forwards .45s;
+  opacity: 0;
+}
+
+.landing-title {
+  -webkit-animation: heroContent 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 0.15s;
+  animation: heroContent 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 0.15s;
+  opacity: 0;
+}
+
+.landing-paragraph {
+  -webkit-animation: heroContent 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 0.3s;
+  animation: heroContent 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 0.3s;
+  opacity: 0;
+}
+
+.landing-cta {
+  -webkit-animation: heroContent 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 0.45s;
+  animation: heroContent 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 0.45s;
+  opacity: 0;
+}
+
+/* keyframes */
 @-webkit-keyframes heroBg {
   from {
       -webkit-transform: scaleY(0) scaleX(1.2) skewY(30deg);
@@ -172,7 +224,72 @@
   }
 }
 
+@-webkit-keyframes heroContent {
+  from {
+      -webkit-transform: translateY(40px) skewY(2deg);
+      transform: translateY(40px) skewY(2deg);
+      opacity: 0
+  }
+  to {
+      -webkit-transform: translateY(0) skewY(0);
+      transform: translateY(0) skewY(0);
+      opacity: 1
+  }
+}
 
-#hero-particles{
-  height: 100%;
+@keyframes heroContent {
+  from {
+      -webkit-transform: translateY(40px) skewY(2deg);
+      transform: translateY(40px) skewY(2deg);
+      opacity: 0
+  }
+  to {
+      -webkit-transform: translateY(0) skewY(0);
+      transform: translateY(0) skewY(0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes heroMockup {
+  from {
+      -webkit-transform: translateY(80px);
+      transform: translateY(80px);
+      opacity: 0
+  }
+  to {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1
+  }
+}
+
+@keyframes heroMockup {
+  from {
+      -webkit-transform: translateY(80px);
+      transform: translateY(80px);
+      opacity: 0
+  }
+  to {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes heroFadeIn {
+  from {
+      opacity: 0
+  }
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes heroFadeIn {
+  from {
+      opacity: 0
+  }
+  to {
+      opacity: 1
+  }
 }

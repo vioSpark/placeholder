@@ -80,7 +80,6 @@ function is_valid(text) {
 }
 
 function is_button(key, value) {
-    console.log(key)
     not_button_attributes = ["name", "image", "description", "note", "logo"]
     if (not_button_attributes.includes(key)) {
         return false
@@ -142,7 +141,7 @@ function create_card(project) {
                     <div class="flip-card-front">
                         <img class="flip-image" src="src/images/`+ project.image + `">
                     </div>
-                    <div class="flip-card-back">
+                    <div class="flip-card-back card-body">
                         <p>`+ project.description + notes + `</p>
                         `+ button_html + `
                     </div>
