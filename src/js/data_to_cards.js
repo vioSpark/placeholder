@@ -40,6 +40,12 @@ const writing_projects = [
         image: "website.png",
         description: "I decided to make a website so I did",
         github: "https://github.com/vioSpark/placeholder/settings/pages"
+    },
+    {
+        name: "Other projects",
+        image: "",
+        description: "The burittos case, What's this plant",
+        github: ""
     }
 ]
 
