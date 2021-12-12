@@ -31,21 +31,27 @@ const writing_projects = [
     {
         name: "Optic lens simulation",
         image: "filter_madness2.png",
-        description: "The case when I nerded out, and made a mathematical model following a random youtube video.",
-        note: "While this was a one-nighter project, I've solved many of my bachelor homeworks with notebooks like this.",
+        description: "The night when I nerded out, and made a mathematical model following a random youtube video.",
+        note: "While this was a one-nighter project, I've solved many of the more complex homeworks with a notebook like this.",
         github: "https://github.com/vioSpark/lens-system-optimizer"
     },
     {
         name: "This website",
-        image: "website.png",
-        description: "I decided to make a website so I did",
+        image: "website2_edited.png",
+        description: "I've always faniced people who have a website, so I made one for myself",
         github: "https://github.com/vioSpark/placeholder/settings/pages"
     },
     {
-        name: "Other projects",
-        image: "",
-        description: "The burittos case, What's this plant",
-        github: ""
+        name: "The burittos case",
+        image: "burittos_case.png",
+        description: 'My shot at analyzing the <a href="https://srcole.github.io/100burritos/">burittos dataset</a> under a weekend',
+        "Coming soon": "link"
+    },
+    {
+        name: "What's this plant",
+        image: "whats_that_plant.png",
+        description: "A fun machine-learning competition, where we needed to classify the plants based on sattelite data (using NDVI measurements)",
+        "Coming soon": "link"
     }
 ]
 
