@@ -1,0 +1,12 @@
+//defining custom variables
+$primary: #F69200;
+$warning: #F69200;
+$secondary: #212529;
+
+$dark: #0B0D19; 
+
+//configurations
+$enable-smooth-scroll: True;
+
+//adding bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
