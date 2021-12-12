@@ -1,7 +1,7 @@
 // First time writing in js, so prob not the best practices
 const writing_projects = [
     {
-        name: "",
+        name: "Weather's effect on infarction",
         image: "infarct_vs_Peczely_number.png",
         description: "My bachelor thesis project about heart attack, weather, and conditional probabilities",
         github: "https://github.com/vioSpark/weather-data-analyzer-public"
@@ -13,7 +13,7 @@ const writing_projects = [
         github: "https://github.com/vioSpark/color_sample_measurements"
     },
     {
-        name: "virus.exe",
+        name: "Virus.exe",
         image: "virus.jpg",
         description: "A discrete covid simulation using hypotethical parameters and a semi agent-based approach for a competition.",
         note: "It's a huge C++ project we still haven't cleaned up after submitting to Ericcson programozói bajnokság 2020",
@@ -21,7 +21,7 @@ const writing_projects = [
         logo: "DefraggedZebra"
     },
     {
-        name: "selfdriving_pathfinding",
+        name: "Selfdriving pathfinding",
         image: "pathfinding.png",
         description: "A discrete pathfinding solution in a hypothetical word of fixed road-lengths, predictable traffic lights, and unpredictable traffic.",
         note: "It's a python project, submitted to a Bosch programming challange",
@@ -45,13 +45,13 @@ const writing_projects = [
         name: "The burittos case",
         image: "burittos_case.png",
         description: 'My shot at analyzing the <a href="https://srcole.github.io/100burritos/">burittos dataset</a> under a weekend',
-        "Coming soon": "link"
+        coming_soon: "/"
     },
     {
         name: "What's this plant",
         image: "whats_that_plant.png",
         description: "A fun machine-learning competition, where we needed to classify the plants based on sattelite data (using NDVI measurements)",
-        "Coming soon": "link"
+        coming_soon: "/"
     }
 ]
 
@@ -67,7 +67,7 @@ const reading_projects = [
         image: "sesn.png",
         description: "An assignment when we reviwed some high-level set theory to understand some of the latest improvements in image recognition",
         website: "https://spetrescu.github.io/sesn-reproducibility-project"
-        // github:"https://towardsdatascience.com/sesn-cec766026179"
+        // blogpost:"https://towardsdatascience.com/sesn-cec766026179"
     },
     {
         name: "Knowldge-management",
@@ -105,7 +105,7 @@ function is_button(key, value) {
 
 function add_github_logo(key, value) {
     return `
-    <a class="btn btn-outline-primary" href="` + value + `"><svg
+    <a class="btn btn-outline-primary" href="` + value + `" target="_blank"><svg
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
             focusable="false" width="1.03em" height="1em"
             style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -119,19 +119,25 @@ function add_github_logo(key, value) {
     `
 }
 
+function add_coming_soon() {
+    return `<a class="btn btn-outline-primary" href="#">` + `Coming soon` + `</a>`
+}
+
 function make_buttons(project) {
     button_html = ""
     for (const [key, value] of Object.entries(project)) {
         if (!(is_button(key, value))) {
             continue
         }
-        if (key != "github") {
+        if (key != "github" && key != "coming_soon") {
             button_html += `
         <p><a class="btn btn-outline-primary"
-        href="`+ value + `">
+        href="`+ value + `" target="_blank">
         `+ key + `</a></p>`
-        } else {
+        } else if (key == "github") {
             button_html += add_github_logo(key, value)
+        } else if (key == "coming_soon") {
+            button_html += add_coming_soon()
         }
     }
     return button_html
@@ -150,18 +156,28 @@ function create_card(project) {
         <div class="m-2 bd-highlight">
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front position-relative">
                         <img class="flip-image" src="src/images/`+ project.image + `">
+                        <h5 class="flip-title">`+ project.name + `</h5>
                     </div>
                     <div class="flip-card-back card-body">
                         <p class="text-justify">`+ project.description + notes + `</p>
                         `+ button_html + `
                     </div>
+                    <h5 class="flip-title text-dark">`+ project.name + `</h5>
                 </div>
             </div>
         </div>`
     return card
 }
+
+{/* <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+</div> */}
+
 
 // writing projects
 parent_div = document.getElementById("writing_projects")

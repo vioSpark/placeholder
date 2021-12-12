@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width">
     <title>Mark Lukacs</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-    <!-- Bootstrap original css -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <!-- customized css -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:700" rel="stylesheet">
+    <!-- customized bootstrap -->
     <link href="src/css/main.min.css" rel="stylesheet">
-    <!-- internal css -->
+    <!-- custom css -->
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -48,7 +45,7 @@
                                     <a href="#projects" class="nav-link">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#contact" class="nav-link">Who tf is Mark/contact </a>
+                                    <a href="#about" class="nav-link">Who tf is Mark/contact </a>
                                     write intro here + sm links
                                 </li>
                             </ul>
@@ -57,7 +54,6 @@
                     </div>
                 </nav>
                 <!-- Landing text -->
-                <!-- TODO: flexbox for l-r divison -->
                 <section class="landing container">
                     <div class="lead-text text-light py-5 d-sm-flex align-items-center justify-content-between">
                         <div class="">
@@ -78,9 +74,10 @@
                         <div class="d-none d-sm-block text-center">
                             <img src="/src/images/gray_scale_portrait.png" class="img-fluid">
                             <p>
-                                <a class="btn btn-primary landing-cta" href="https://www.linkedin.com/in/vispark/"><svg
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        aria-hidden="true" focusable="false" width="1.03em" height="1em"
+                                <a class="btn btn-primary landing-cta" target="_blank"
+                                    href="https://www.linkedin.com/in/vispark/"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                        width="1.03em" height="1em"
                                         style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 34 34">
                                         <path
@@ -91,14 +88,16 @@
                                 </a>
                             </p>
                             <p>
-                                <a class="btn btn-primary landing-cta" href="https://lukacs-mark.medium.com/">
+                                <a class="btn btn-primary landing-cta" target="_blank"
+                                    href="https://lukacs-mark.medium.com/">
                                     Medium
                                 </a>
                             </p>
                             <p>
-                                <a class="btn btn-primary landing-cta" href="https://github.com/vioSpark"><svg
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        aria-hidden="true" focusable="false" width="1.03em" height="1em"
+                                <a class="btn btn-primary landing-cta" target="_blank"
+                                    href="https://github.com/vioSpark"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                                        width="1.03em" height="1em"
                                         style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 250">
                                         <path
@@ -113,7 +112,7 @@
                 </section>
 
                 <!-- project cards -->
-                <section class="text-light text-center container">
+                <section id="projects" class="text-light container">
                     <h1 class="display-5 text-dark">
                         <b>
                             Projects where the focus was on writing code
@@ -124,7 +123,6 @@
                     </div>
 
                     <!-- more project cards -->
-                    <!--  TODO:  apply color scheme  -->
                     <h1 class="display-5 text-dark">
                         <b>
                             Projects where the focus was on understadning code
@@ -134,23 +132,60 @@
                         <!-- js fills the rest here -->
                     </div>
                 </section>
+                <section id="about" class="bg-dark">
+                    <div class="container py-5 text-light">
+                        <h1 class="display-5">
+                            <b>
+                                About me:
+                            </b>
+                        </h1>
+                        <p>
+                            So why Management of Technology?
+                        </p>
+                        <p>
+                            After I discovered my interest in the STEM field at 5th grade I naturally found myself
+                            graduating as a Mechatronics engineer from BME. However, during my bachelor years I
+                            realized that putting together something truly remarkable requires more than one person, so
+                            I particpated in a lot of team projects.
+                        </p>
+                        <p>
+                            During these projects I found out that while engineering is hard on it's own, managing
+                            high-performing engineers is even harder! Attracted by the challange, I followed my newfound
+                            interest in leadership and project management, and submitted my application to the the TU
+                            Delft Management of Technology programme.
+                        </p>
+                        <p>
+                            In the past couple years I learnt quite a lot about innovation management, but I realized
+                            that many decisions aren't based on accurate data. Therefore I plan to finish my studies by
+                            researching what inhibits the full adoption of data science into strategy the creation
+                            process, and what can we do about it.
 
+                        </p>
+                    </div>
+                </section>
 
                 <!-- contact me -->
                 <section class="container">
-                    <h1 class="display-6 text-dark">
-                        If this all got you interested, and have a fun next project proposal
-                        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/vispark/">
-                            share it with me
-                        </a>
+                    <h1 class="display-5 text-dark">
+                        <b>
+                            If this all got you interested, and have a fun next project proposal,
+                            <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/vispark/">
+                                let's connect
+                            </a>
+                        </b>
                     </h1>
                 </section>
 
                 <!-- TODO: fill footer -->
                 <footer class="site-footer">
-                    © 2021 Sparkie
-                    <div class="footer-particles-container bg-dark">
+
+                    <div class="footer-absolute-container bg-dark">
                         <canvas id="footer-particles"></canvas>
+                    </div>
+                    <div class="container footer-absolute-container">
+                        <p class="text-light position-absolute end-0">
+                            © 2021 Sparkie
+                        </p>
                     </div>
                 </footer>
             </div>
