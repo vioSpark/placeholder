@@ -10,12 +10,27 @@
 }
 
 .flip-image{ 
-  width:var(--card_width);
-  height:var(--card_height);
+  width:calc(var(--card_width) * 1);
+  height:calc(var(--card_height) *1);
+  /* object-fit: cover; */
+  object-fit: contain;
+}
+.flip-bg-image{
+  width:calc(var(--card_width) * 1);
+  height:calc(var(--card_height) *1);
+  opacity: 0.3;
+  position: absolute;
   /* object-fit: cover; */
   object-fit: contain;
 }
 
+.text-stroke{
+  -webkit-text-stroke: 0.2px #F69200;
+}
+
+/* body{
+  background-color: black;
+} */
 /* body::before {
   bc of navbar fixed-top
   display: block;
@@ -27,8 +42,8 @@
   position: absolute;
   opacity: 0.5;
   width: 100vw;
-        /* clip bg image scrollbar */
-        overflow: hidden;
+  /* clip bg image scrollbar */
+  overflow: hidden;
 }
 
 .landing::before{
@@ -41,12 +56,6 @@
 /*------------------------------------------------------------------------------------------------------------------*/
 /* Parallax from https://keithclark.co.uk/articles/pure-css-parallax-websites/demo2/   */
 /*------------------------------------------------------------------------------------------------------------------*/
-  /* .parallax__group {
-    position: relative;
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }  */
 
 .parallax_container {
     height: 100vh;
@@ -122,7 +131,11 @@
 /* Style the back side */
 .flip-card-back {
   background-color: #0B0D19;
-  color: white;
+  /* border-style: solid;
+  border-color: #F69200;
+  border-width: 1px; */
+  padding: 10%;
+  /* color: white; */
   transform: rotateY(180deg);
 }
 

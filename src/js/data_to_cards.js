@@ -99,7 +99,7 @@ function is_button(key, value) {
 
 function add_github_logo(key, value) {
     return `
-    <a class="btn btn-light" href="` + value + `"><svg
+    <a class="btn btn-outline-primary" href="` + value + `"><svg
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
             focusable="false" width="1.03em" height="1em"
             style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -121,7 +121,7 @@ function make_buttons(project) {
         }
         if (key != "github") {
             button_html += `
-        <p><a class="btn btn-light"
+        <p><a class="btn btn-outline-primary"
         href="`+ value + `">
         `+ key + `</a></p>`
         } else {
@@ -148,7 +148,7 @@ function create_card(project) {
                         <img class="flip-image" src="src/images/`+ project.image + `">
                     </div>
                     <div class="flip-card-back card-body">
-                        <p>`+ project.description + notes + `</p>
+                        <p class="text-justify">`+ project.description + notes + `</p>
                         `+ button_html + `
                     </div>
                 </div>
